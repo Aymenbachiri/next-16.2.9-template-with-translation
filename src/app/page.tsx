@@ -1,3 +1,4 @@
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -16,6 +17,8 @@ export default function Home() {
         <Button className="mt-10" variant="outline">
           Get Started
         </Button>
+
+        <ThemeToggle />
       </main>
     </div>
   );
