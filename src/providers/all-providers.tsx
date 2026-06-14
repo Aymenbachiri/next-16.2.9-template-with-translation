@@ -7,12 +7,7 @@ type AllProvidersProps = {
 
 export default function AllProviders({ children }: AllProvidersProps) {
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange
-    >
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <DirectionProvider direction="rtl">{children}</DirectionProvider>
     </ThemeProvider>
   );
