@@ -1,5 +1,6 @@
 import { DirectionProvider } from "@/components/ui/direction";
 import { ThemeProvider } from "@/providers/theme-provider";
+import { NextIntlClientProvider } from "next-intl";
 
 type AllProvidersProps = {
   children: React.ReactNode;
@@ -7,8 +8,10 @@ type AllProvidersProps = {
 
 export default function AllProviders({ children }: AllProvidersProps) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      <DirectionProvider direction="rtl">{children}</DirectionProvider>
-    </ThemeProvider>
+    <NextIntlClientProvider>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <DirectionProvider direction="rtl">{children}</DirectionProvider>
+      </ThemeProvider>
+    </NextIntlClientProvider>
   );
 }
