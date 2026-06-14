@@ -1,11 +1,11 @@
 import { DirectionProvider } from "@/components/ui/direction";
 import { ThemeProvider } from "@/providers/theme-provider";
 
-export default function AllProviders({
-  children,
-}: {
+type AllProvidersProps = {
   children: React.ReactNode;
-}) {
+};
+
+export default function AllProviders({ children }: AllProvidersProps) {
   return (
     <ThemeProvider
       attribute="class"

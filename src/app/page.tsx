@@ -1,25 +1,17 @@
-import { ThemeToggle } from "@/components/ui/theme-toggle";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { Navbar } from "@/components/header/navbar";
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex w-full max-w-3xl flex-1 flex-col items-center justify-between bg-white px-16 py-32 sm:items-start dark:bg-black">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <Button className="mt-10" variant="outline">
-          Get Started
-        </Button>
-
-        <ThemeToggle />
-      </main>
-    </div>
+    <main className="mx-auto min-h-screen w-full px-4">
+      <Navbar />
+      {Array.from({ length: 7 }).map((_, i) => (
+        <div key={i} className="mx-auto mb-8 max-w-xl space-y-2 pt-12">
+          <div className="bg-accent h-4 w-full rounded-md border" />
+          <div className="bg-accent h-4 w-full rounded-md border" />
+          <div className="bg-accent h-4 w-full rounded-md border" />
+          <div className="bg-accent h-4 w-1/2 rounded-md border" />
+        </div>
+      ))}
+    </main>
   );
 }

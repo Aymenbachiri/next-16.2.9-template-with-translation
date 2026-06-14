@@ -37,7 +37,7 @@ export default function RootLayout({
         "font-sans",
         inter.variable,
       )}
-      dir="rtl"
+      dir="ltr"
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col">
