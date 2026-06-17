@@ -1,5 +1,17 @@
 {
   "HomePage": {
     "title": "Bonjour le monde!"
+  },
+  "notFound": {
+    "error": "Erreur",
+    "title": "Page non trouvée",
+    "description": "Désolé, la page que vous recherchez n'existe pas. Veuillez vérifier l'URL ou revenir à la page d'accueil.",
+    "backHome": "Retour à l'accueil",
+    "contactSupport": "Contactez le support"
+  },
+  "Error": {
+    "title": "Oups! Une erreur s'est produite.",
+    "description": "Nous sommes désolés, une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
+    "retry": "Réessayer"
   }
 }

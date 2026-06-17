@@ -1,5 +1,17 @@
 {
   "HomePage": {
     "title": "Hello world!"
+  },
+  "notFound": {
+    "error": "Error",
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist, has been moved, or is temporarily unavailable.",
+    "backHome": "Go Back Home",
+    "contactSupport": "Contact Support"
+  },
+  "Error": {
+    "title": "Oops! Something went wrong.",
+    "description": "We're sorry, but an unexpected error occurred. Please try again later.",
+    "retry": "Retry"
   }
 }

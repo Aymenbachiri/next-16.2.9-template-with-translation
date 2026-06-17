@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/header/navbar";
 
-export default function Home() {
+export default function Home(): React.JSX.Element {
   return (
     <main className="mx-auto min-h-screen w-full px-4">
       <Navbar />
