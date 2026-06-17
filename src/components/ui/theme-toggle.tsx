@@ -2,8 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useTheme } from "@wrksz/themes/client";
 import { MoonIcon, SunIcon } from "lucide-react";
-import { useTheme } from "next-themes";
 import { useTransition } from "react";
 
 type ThemeToggleProps = React.ComponentProps<"button"> & {
