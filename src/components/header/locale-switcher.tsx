@@ -3,7 +3,7 @@ import { routing } from "@/i18n/routing";
 import { AlgeriaFlagIcon } from "@/lib/icons/algeria-flag-icon";
 import { FranceFlagIcon } from "@/lib/icons/france-flag-icon";
 import { UsaFlagIcon } from "@/lib/icons/usa-flag-icon";
-import { LocaleType } from "@/i18n/navigation";
+import type { LocaleType } from "@/i18n/navigation";
 import { LocaleSwitcherSelect } from "./locale-switcher-select";
 
 const FLAG_MAP: Record<string, React.ReactNode> = {

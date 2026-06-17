@@ -1,6 +1,6 @@
 import { useParams } from "next/navigation";
 import { useTransition } from "react";
-import { LocaleType, usePathname, useRouter } from "@/i18n/navigation";
+import { type LocaleType, usePathname, useRouter } from "@/i18n/navigation";
 
 type UseLocaleSwitcherSelectReturn = {
   locale: LocaleType;

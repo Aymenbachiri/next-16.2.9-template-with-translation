@@ -1,4 +1,10 @@
 import { Navbar } from "@/components/header/navbar";
+import type { LocaleType } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
+
+export function generateStaticParams(): { locale: LocaleType }[] {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default function Home(): React.JSX.Element {
   return (

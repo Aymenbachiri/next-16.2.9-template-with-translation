@@ -1,5 +1,5 @@
 import { DirectionProvider } from "@/components/ui/direction";
-import { LocaleType } from "@/i18n/navigation";
+import type { LocaleType } from "@/i18n/navigation";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { NextIntlClientProvider } from "next-intl";
 

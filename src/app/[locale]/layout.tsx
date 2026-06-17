@@ -6,7 +6,7 @@ import { AllProviders } from "@/providers/all-providers";
 import { hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
-import { LocaleType } from "@/i18n/navigation";
+import type { LocaleType } from "@/i18n/navigation";
 import { setRequestLocale } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
