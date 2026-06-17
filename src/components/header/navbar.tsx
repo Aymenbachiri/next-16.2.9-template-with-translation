@@ -5,6 +5,7 @@ import { useScroll } from "@/lib/hooks/use-scroll";
 import { MenuToggleIcon } from "./menu-toggle-icon";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "../ui/theme-toggle";
+import { LocaleSwitcher } from "./locale-switcher";
 
 type NavbarLinks = {
   label: string;
@@ -66,7 +67,10 @@ export function Navbar(): React.JSX.Element {
           <Button variant="outline">Sign In</Button>
           <Button>Get Started</Button>
         </div>
-        <ThemeToggle className="hidden md:block" />
+        <div className="hidden md:flex md:items-center md:gap-2">
+          <ThemeToggle />
+          <LocaleSwitcher />
+        </div>
         <div className="flex gap-2">
           <Button
             size="icon"
@@ -76,7 +80,11 @@ export function Navbar(): React.JSX.Element {
           >
             <MenuToggleIcon open={open} className="size-5" duration={300} />
           </Button>
+
           <ThemeToggle className="block md:hidden" />
+          <div className="block md:hidden">
+            <LocaleSwitcher />
+          </div>
         </div>
       </nav>
 

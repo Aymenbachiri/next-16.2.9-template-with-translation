@@ -13,5 +13,9 @@
     "title": "Oops! Something went wrong.",
     "description": "We're sorry, but an unexpected error occurred. Please try again later.",
     "retry": "Retry"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {Arabic} en {English} fr {French} other {Unknown}}"
   }
 }

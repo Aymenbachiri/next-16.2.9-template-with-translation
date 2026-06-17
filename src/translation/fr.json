@@ -13,5 +13,9 @@
     "title": "Oups! Une erreur s'est produite.",
     "description": "Nous sommes désolés, une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
     "retry": "Réessayer"
+  },
+  "LocaleSwitcher": {
+    "label": "Changer la langue",
+    "locale": "{locale, select, ar {Arabe} en {Anglais} fr {Français} other {Inconnu}}"
   }
 }
